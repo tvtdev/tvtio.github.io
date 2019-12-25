@@ -1,0 +1,857 @@
+node_modules/serverless/lib/Serverless.js:126:20)
+      at tryCatcher (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/util.js:16:23)
+      at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:547:31)
+      at Promise._settlePromise (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:604:18)
+      at Promise._settlePromise0 (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:649:10)
+      at Promise._settlePromises (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:729:18)
+      at Promise._fulfill (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:673:18)
+      at Promise._resolveCallback (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:466:57)
+      at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:559:17)
+      at Promise._settlePromise (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:604:18)
+      at Promise._settlePromise0 (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:649:10)
+      at Promise._settlePromises (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:729:18)
+      at Promise._fulfill (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:673:18)
+      at Promise._resolveCallback (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:466:57)
+      at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:559:17)
+      at Promise._settlePromise (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:604:18)
+      at Promise._settlePromise0 (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:649:10)
+      at Promise._settlePromises (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:729:18)
+      at Promise._fulfill (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:673:18)
+      at Promise._resolveCallback (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:466:57)
+      at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:559:17)
+      at Promise._settlePromise (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:604:18)
+      at Promise._settlePromise0 (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:649:10)
+      at Promise._settlePromises (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:729:18)
+      at Promise._fulfill (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:673:18)
+      at Promise._resolveCallback (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:489:14)
+      at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:559:17)
+      at Promise._settlePromise (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:604:18)
+      at Promise._settlePromise0 (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:649:10)
+      at Promise._settlePromises (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:729:18)
+      at Promise._fulfill (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:673:18)
+      at Promise._resolveCallback (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:466:57)
+      at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:559:17)
+      at Promise._settlePromise (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:604:18)
+      at Promise._settlePromise0 (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:649:10)
+      at Promise._settlePromises (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:729:18)
+      at Promise._fulfill (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:673:18)
+      at PromiseArray._resolve (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise_array.js:127:19)
+      at PromiseArray._promiseFulfilled (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise_array.js:145:14)
+      at Promise._settlePromise (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:609:26)
+      at Promise._settlePromise0 (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:649:10)
+      at Promise._settlePromises (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:729:18)
+      at Promise._fulfill (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:673:18)
+      at Promise._resolveCallback (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:466:57)
+      at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:559:17)
+      at Promise._settlePromise (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:604:18)
+      at Promise._settlePromise0 (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:649:10)
+      at Promise._settlePromises (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:729:18)
+      at Promise._fulfill (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:673:18)
+      at Promise._resolveCallback (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:466:57)
+      at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:559:17)
+      at Promise._settlePromise (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:604:18)
+      at Promise._settlePromise0 (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:649:10)
+      at Promise._settlePromises (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:729:18)
+      at Promise._fulfill (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:673:18)
+      at Promise._resolveCallback (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:466:57)
+      at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:559:17)
+      at Promise._settlePromise (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:604:18)
+      at Promise._settlePromise0 (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:649:10)
+      at Promise._settlePromises (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:729:18)
+      at Promise._fulfill (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:673:18)
+      at PromiseArray._resolve (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise_array.js:127:19)
+      at PromiseArray._promiseFulfilled (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise_array.js:145:14)
+      at Promise._settlePromise (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:609:26)
+      at Promise._fulfillPromises (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:704:14)
+      at Promise._settlePromises (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/promise.js:730:18)
+      at _drainQueueStep (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/async.js:93:12)
+      at _drainQueue (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/async.js:86:9)
+      at Async._drainQueues (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/async.js:102:5)
+      at Immediate.Async.drainQueues [as _onImmediate] (/usr/local/lib/node_modules/serverless/node_modules/bluebird/js/release/async.js:15:14)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  defaultMessages:^M
+    handler: handler.defaultMessage^M
+    events:^M
+      - websocket:^M
+          route: $default^M
+  sendMessage:^M
+    handler: handler.sendMessage^M
+    events:^M 
+      - websocket:^M
+          route: sendMessage^M
+  listMessage:
+          hander:handler.getMessage
+  events:
+          http:
+           route:get
+resources:^M
+  Resources:^M
+    ChatConnectionsTable:^M
+      Type: AWS::DynamoDB::Table^M
+      Properties:^M 
+        AttributeDefinitions:^M
+          - AttributeName: connectionId^M
+            AttributeType: S^M
+        KeySchema:^M
+          - AttributeName: connectionId^M
+            KeyType: HASH^M
+        ProvisionedThroughput:^M
+          ReadCapacityUnits: 5^M
+          WriteCapacityUnits: 5^M
+<erverless.yml" 114L, 3094C           82,20         78%
+    handler: handler.defaultMessage^M
+    events:^M
+      - websocket:^M
+          route: $default^M
+  sendMessage:^M
+    handler: handler.sendMessage^M
+    events:^M
+      - websocket:^M
+          route: sendMessage^M
+  listMessage:
+          hander:handler.getMessage
+  events:
+          http
+           route:get
+resources:^M
+  Resources:^M
+    ChatConnectionsTable:^M
+      Type: AWS::DynamoDB::Table^M
+      Properties:^M
+        AttributeDefinitions:^M
+          - AttributeName: connectionId^M
+            AttributeType: S^M
+        KeySchema:^M
+          - AttributeName: connectionId^M
+            KeyType: HASH^M
+        ProvisionedThroughput:^M
+-- INSERT --                          81,16         77%
+  defaultMessages:^M
+    handler: handler.defaultMessage^M
+    events:^M
+      - websocket:^M
+          route: $default^M
+  sendMessage:^M
+    handler: handler.sendMessage^M
+    events:^M
+      - websocket:^M
+          route: sendMessage^M
+  listMessage:
+          hander:handler.getMessage
+  events:
+          http:
+
+           route:get
+resources:^M
+  Resources:^M
+    ChatConnectionsTable:^M
+      Type: AWS::DynamoDB::Table^M
+      Properties:^M
+        AttributeDefinitions:^M
+          - AttributeName: connectionId^M
+            AttributeType: S^M
+        KeySchema:^M
+          - AttributeName: connectionId^M
+            KeyType: HASH^M
+        ProvisionedThroughput:^M
+          ReadCapacityUnits: 5^M
+-- INSERT --                          82,19         77%
+  authorizerFunc:^M
+    handler: handler.authorizerFunc^M
+  defaultMessages:^M
+    handler: handler.defaultMessage^M
+    events:^M
+      - websocket:^M
+          route: $default^M
+  sendMessage:^M
+    handler: handler.sendMessage^M
+    events:^M
+      - websocket:^M
+          route: sendMessage^M
+  listMessage:
+          hander:handler.getMessage
+  events:
+          http:
+                  method:
+           route:get
+resources:^M
+  Resources:^M
+    ChatConnectionsTable:^M
+      Type: AWS::DynamoDB::Table^M
+      Properties:^M
+        AttributeDefinitions:^M
+          - AttributeName: connectionId^M
+            AttributeType: S^M
+        KeySchema:^M
+          - AttributeName: connectionId^M
+            KeyType: HASH^M
+        ProvisionedThroughput:^M
+          ReadCapacityUnits: 5^M
+          WriteCapacityUnits: 5^M
+        TableName: ${self:provider.environment.CHATCONNECTION_TABLE}^M
+-- INSERT --                          82,27         79%
+    handler: handler.authorizerFunc^M
+  defaultMessages:^M
+    handler: handler.defaultMessage^M
+    events:^M
+      - websocket:^M
+          route: $default^M
+  sendMessage:^M
+    handler: handler.sendMessage^M
+    events:^M
+      - websocket:^M
+          route: sendMessage^M
+   GetMessage:
+     hander:handler.getMessage
+     events:
+       - http:
+           method: get
+          path: get
+resources:^M
+  Resources:^M
+    ChatConnectionsTable:^M
+      Type: AWS::DynamoDB::Table^M
+      Properties:^M
+        AttributeDefinitions:^M
+          - AttributeName: connectionId^M
+            AttributeType: S^M
+        KeySchema:^M
+          - AttributeName: connectionId^M
+            KeyType: HASH^M
+        ProvisionedThroughput:^M
+          ReadCapacityUnits: 5^M
+          WriteCapacityUnits: 5^M
+@@@                                                     -- INSERT --                          83,8          78%
+    handler: handler.defaultMessage^M
+    events:^M
+      - websocket:^M
+          route: $default^M
+  sendMessage:^M
+    handler: handler.sendMessage^M
+    events:^M
+      - websocket:^M
+          route: sendMessage^M
+   GetMessage:
+     hander:handler.getMessage
+     events:
+       - http:
+           method: get
+           path: /get
+resources:^M
+  Resources:^M
+    ChatConnectionsTable:^M
+      Type: AWS::DynamoDB::Table^M
+      Properties:^M
+        AttributeDefinitions:^M
+          - AttributeName: connectionId^M
+            AttributeType: S^M
+        KeySchema:^M
+          - AttributeName: connectionId^M
+            KeyType: HASH^M
+        ProvisionedThroughput:^M
+          ReadCapacityUnits: 5^M
+          WriteCapacityUnits: 5^M
+:wq
+    handler: handler.connectionManager^M
+    events:^M
+      - websocket:^M
+          route: $connect^M
+      - websocket:^M
+          route: $disconnect^M
+  authorizerFunc:^M
+    handler: handler.authorizerFunc^M
+  defaultMessages:^M
+    handler: handler.defaultMessage^M
+    events:^M
+      - websocket:^M
+          route: $default^M
+  sendMessage:^M
+    handler: handler.sendMessage^M
+    events:^M
+      - websocket:^M
+          route: sendMessage^M
+   GetMessage:
+     hander:handler.getMessage
+     events:
+       - http:
+           method: get
+           path: /get
+resources:^M
+  Resources:^M
+    ChatConnectionsTable:^M
+      Type: AWS::DynamoDB::Table^M
+      Properties:^M
+        AttributeDefinitions:^M
+          - AttributeName: connectionId^M
+            AttributeType: S^M
+        KeySchema:^M
+          - AttributeName: connectionId^M
+            KeyType: HASH^M
+        ProvisionedThroughput:^M
+          ReadCapacityUnits: 5^M
+          WriteCapacityUnits: 5^M
+        TableName: ${self:provider.environment.CHATCONNECTION_TABLE}^M
+    ChatMessageTable:^M
+      Type: AWS::DynamoDB::Table^M
+      Properties:^M
+        AttributeDefinitions:^M
+          - AttributeName: message^M
+            AttributeType: S^M
+          - AttributeName: createdAt^M
+:wq
+    handler: handler.defaultMessage^M
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ubuntu@ip-172-31-35-251:~/api/serverless$ sudo sls deploy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    handler: handler.defaultMessage^M
+ 
+  Y A M L Exception ------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        AttributeDefinitions:^M
+--
+ 
+  bad indentation of a mapping entry in "/home/ubuntu/api/serverless/serverless.yml" at line 78, column 4:
+         GetMessage:
+         ^
+ 
+  Get Support --------------------------------------------
+     Docs:          docs.serverless.com
+     Bugs:          github.com/serverless/serverless/issues
+     Issues:        forum.serverless.com
+ 
+  Your Environment Information ---------------------------
+     Operating System:          linux
+     Node Version:              10.15.2
+     Framework Version:         1.60.1
+     Plugin Version:            3.2.6
+     SDK Version:               2.2.1
+     Components Core Version:   1.1.2
+     Components CLI Version:    1.4.0
+ 
+ubuntu@ip-172-31-35-251:~/api/serverless$ 
+ubuntu@ip-172-31-35-251:~/api/serverless$ sudo vi serverless.yml 
+ubuntu@ip-172-31-35-251:~/api/serverless$ sudo vi serverless.yml 
+
+[1]+  Stopped                 sudo vi serverless.yml
+ubuntu@ip-172-31-35-251:~/api/serverless$ ls
+handler.js    package-lock.json  yarn.lock
+lig           package.json
+node_modules  serverless.yml
+ubuntu@ip-172-31-35-251:~/api/serverless$ sudo sls deplo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    handler: handler.defaultMessage^M
+y
+ 
+  Y A M L Exception --------------------------------------
+ 
+  bad indentation of a mapping entry in "/home/ubuntu/api/serverless/serverless.yml" at line 80, column 12:
+           events:
+                 ^
+ 
+  Get Support --------------------------------------------
+     Docs:          docs.serverless.com
+     Bugs:          github.com/serverless/serverless/issues
+     Issues:        forum.serverless.com
+ 
+  Your Environment Information ---------------------------
+     Operating System:          linux
+     Node Version:              10.15.2
+     Framework Version:         1.60.1
+     Plugin Version:            3.2.6
+     SDK Version:               2.2.1
+     Components Core Version:   1.1.2
+     Components CLI Version:    1.4.0
+ 
+ubuntu@ip-172-31-35-251:~/api/serverless$ sudo vi serverless.yml 
+ubuntu@ip-172-31-35-251:~/api/serverless$ sudo sls deploy
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service serverless-chat.zip file to S3 (5.15 MB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+..........................................................
+Serverless: Stack update finished...
+Service Information
+service: serverless-chat
+stage: dev
+region: us-east-1
+stack: serverless-chat-dev
+resources: 38
+api keys:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      - websocket:^M
+  None
+endpoints:
+  GET - https://e1pw9wt35i.execute-api.us-east-1.amazonaws.com/dev/getmessage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          route: $disconnect^M
+  wss://fyto9xxnkc.execute-api.us-east-1.amazonaws.com/dev
+functions:
+  connectionManager: serverless-chat-dev-connectionManag
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          route: $disconnect^M
+er
+  authorizerFunc: serverless-chat-dev-authorizerFunc
+  defaultMessages: serverless-chat-dev-defaultMessages
+  sendMessage: serverless-chat-dev-sendMessage
+  GetMessage: serverless-chat-dev-GetMessage
+layers:
+  None
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+module.exports.defaultMessage = (event, context, callback) => {
+    const postData = JSON.stringify(event.body) ;
+    let time =  Date.now().toString();
+        const  putParams = {
+            TableName: process.env.CHATMESSAGE_TABLE,
+            Item: {
+                createdAt: { S: time },
+                message: { S: postData }
+                    }
+        };
+    return DDB.putItem(putParams).promise();
+};
+
+module.exports.sendMessage = async (event, context, callback) => {
+  let connectionData;
+  try {
+    connectionData = await DDB.scan({
+      TableName: process.env.CHATCONNECTION_TABLE,
+      ProjectionExpression: "connectionId"
+    }).promise();
+  } catch (err) {
+    console.log(err);
+    return { statusCode: 500 };
+  }
+
+
+    var unix = new Date().getTime() - 3000;
+                                      46,5-12       20%
+
+module.exports.defaultMessage = (event, context, callback) => {
+    const postData = JSON.stringify(event.body) ;
+    let time =  Date.now().toString();
+        const  putParams = {
+            TableName: process.env.CHATMESSAGE_TABLE,
+            Item: {
+                createdAt: { S: time },
+                message: { S: postData }
+                    }
+        };
+    return DDB.putItem(putParams).promise();
+};
+
+
+
+module.exports.sendMessage = async (event, context, callback) => {
+  let connectionData;
+  try {
+    connectionData = await DDB.scan({
+      TableName: process.env.CHATCONNECTION_TABLE,
+      ProjectionExpression: "connectionId"
+    }).promise();
+  } catch (err) {
+    console.log(err);
+    return { statusCode: 500 };
+  }
+
+
+    var unix = new Date().getTime() - 3000;
+    var unix_str = unix.toString();
+    let params = {^M
+-- INSERT --                          56,1          20%
+module.exports.defaultMessage = (event, context, callback) => {
+    const postData = JSON.stringify(event.body) ;
+    let time =  Date.now().toString();
+        const  putParams = {
+            TableName: process.env.CHATMESSAGE_TABLE,
+            Item: {
+                createdAt: { S: time },
+                message: { S: postData }
+                    }
+        };
+    return DDB.putItem(putParams).promise();
+};
+
+module.exports.getMessage = (event, context, callback) => {
+          callback(null);
+};
+
+module.exports.sendMessage = async (event, context, callback) => {
+  let connectionData;
+  try {
+    connectionData = await DDB.scan({
+      TableName: process.env.CHATCONNECTION_TABLE,
+      ProjectionExpression: "connectionId"
+    }).promise();
+  } catch (err) {
+    console.log(err);
+    return { statusCode: 500 };
+  }
+
+-- INSERT --                          55,19         20%
+    const postData = JSON.stringify(event.body) ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          route: $disconnect^M
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ubuntu@ip-172-31-35-251:~/api/serverless$ sudo vi serverless.yml 
+ubuntu@ip-172-31-35-251:~/api/serverless$ sudo sls deploy
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service serverless-chat.zip file to S3 (5.15 MB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+........................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};  
+
+module.exports.sendMessage = async (event, context, callback) => {
+  let connectionData;
+  try {
+    connectionData = await DDB.scan({
+      TableName: process.env.CHATCONNECTION_TABLE,
+      ProjectionExpression: "connectionId"
+    }).promise();
+  } catch (err) {
+    console.log(err);
+    return { statusCode: 500 };
+  }
+
+
+    var unix = new Date().getTime() - 3000;
+    var unix_str = unix.toString();
+    let params = {^M
+        TableName: process.env.CHATMESSAGE_TABLE,^M
+        FilterExpression : "createdAt >= :dts",^M
+        ExpressionAttributeValues: { ':dts':{S: unix_str} }^M
+    }^M
+    console.log(unix_str);      ^M
+    var sendData_str = 'a';
+    await  DDB.scan(params,function(err,data)
+    {
+        var len = data.length   -1;
+                                      78,6          27%
