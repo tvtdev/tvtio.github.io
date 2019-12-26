@@ -7,19 +7,18 @@ const websocketUrl = `wss://d4y6q7253j.execute-api.us-east-1.amazonaws.com/dev`
 let socketClient = new WebSocket(`${websocketUrl}`);
 
 const createNewMessageHtml = (username, message) => {
-    var article = document.createElement('article');
-    article.classList.add('media')
+    var article = document.createElement('div');
+    article.classList.add('media-content')
     article.innerHTML = `
-    <div class="media-content">
         <div class="content">
-            <p>
-                <strong>${username}</strong>
-                <br>
+          
+               ${username}:
+             
                 ${message}
                 <br>
-            </p>
+           
         </div>
-    </div>
+
     `
     var target = document.querySelector('#chat-room')
     target.parentNode.insertBefore(article, target);
