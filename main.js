@@ -21,7 +21,7 @@ const createNewMessageHtml = (username, message) => {
 
     `
     var target = document.querySelector('#chat-room')
-    target.parentNode.insertBefore(article, target);
+    target.appendChild(article);
 }
 
 const onMessage = (message) => {

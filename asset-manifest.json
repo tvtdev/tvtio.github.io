@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/myapp/static/css/main.7ea467ac.chunk.css",
-    "main.js": "/myapp/static/js/main.6f4b6270.chunk.js",
-    "main.js.map": "/myapp/static/js/main.6f4b6270.chunk.js.map",
-    "runtime~main.js": "/myapp/static/js/runtime~main.e4f53ea3.js",
-    "runtime~main.js.map": "/myapp/static/js/runtime~main.e4f53ea3.js.map",
-    "static/css/2.d5acac8b.chunk.css": "/myapp/static/css/2.d5acac8b.chunk.css",
-    "static/js/2.089ca002.chunk.js": "/myapp/static/js/2.089ca002.chunk.js",
-    "static/js/2.089ca002.chunk.js.map": "/myapp/static/js/2.089ca002.chunk.js.map",
-    "index.html": "/myapp/index.html",
-    "precache-manifest.cd4dab6b329e7215df0fd3e11c43ba74.js": "/myapp/precache-manifest.cd4dab6b329e7215df0fd3e11c43ba74.js",
-    "service-worker.js": "/myapp/service-worker.js",
-    "static/css/2.d5acac8b.chunk.css.map": "/myapp/static/css/2.d5acac8b.chunk.css.map",
-    "static/css/main.7ea467ac.chunk.css.map": "/myapp/static/css/main.7ea467ac.chunk.css.map",
-    "static/media/semantic.min.css": "/myapp/static/media/outline-icons.ef60a4f6.woff"
+    "main.css": "/static/css/main.7ea467ac.chunk.css",
+    "main.js": "/static/js/main.552b7db9.chunk.js",
+    "main.js.map": "/static/js/main.552b7db9.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.6f3549af.chunk.css": "/static/css/2.6f3549af.chunk.css",
+    "static/js/2.8dea1415.chunk.js": "/static/js/2.8dea1415.chunk.js",
+    "static/js/2.8dea1415.chunk.js.map": "/static/js/2.8dea1415.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.bc997a56400416929c7491159e40b3a3.js": "/precache-manifest.bc997a56400416929c7491159e40b3a3.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.6f3549af.chunk.css.map": "/static/css/2.6f3549af.chunk.css.map",
+    "static/css/main.7ea467ac.chunk.css.map": "/static/css/main.7ea467ac.chunk.css.map",
+    "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff"
   }
 }
