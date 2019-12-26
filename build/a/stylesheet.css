@@ -1,0 +1,225 @@
+div {
+  font-family: 'Open Sans',sans-serif;
+}
+
+.wrapper-all {
+  transform-origin: left top;
+  position: relative;
+  align-self: flex-end;
+  background-color: #e0dad6;
+  z-index: 5;
+  width: 62%;
+  height: 100%;
+
+  z-index: 5;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  background-color: #e0dad6;
+
+  height: 100%;
+  width: 30%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.page-chat-header {
+  z-index: 103;
+  position: relative;
+  border-left: 1px solid rgba(0,0,0,.08);
+  display: flex;
+  flex: none;
+  height: 59px;
+  width: 100%;
+  background-color: #eee;
+  overflow: hidden;
+  display: block;
+}
+
+.page-body {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  position: relative;
+  background: #ede9e4;
+  background: -webkit-linear-gradient(top,#ede9e4 0%,#ede9e4 20%,#e5ddd5 100%);
+  background: linear-gradient(to bottom,#ede9e4 0%,#ede9e4 20%,#e5ddd5 100%);
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  z-index: 1;
+}
+
+.page-chat-msgs {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column-reverse;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 100;
+  box-sizing: border-box;
+  border-left: 1px solid rgba(0,0,0,.03);
+  
+  width: 100%;
+  height: 100%;
+  position: absolute;
+   
+  -webkit-user-select: text;
+  transform: translateZ(0);
+}
+
+.page-chat-empty {
+  flex: 1 1 auto;
+  min-height: 12px;
+  -webkit-box-flex: 1;
+}
+
+.more {
+  flex: none;
+  -webkit-box-flex: 0;
+  padding: 0 0 24px;
+}
+
+.message-list {
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  padding-bottom: 8px;
+  padding-left: 0;
+}
+
+.msg {
+  padding-left: 6%;
+  padding-right: 6%;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.message-in {
+  margin-bottom: 0;
+  background-color: #fff;
+  float: left;
+  border-radius: 7.5px;
+  position: relative;
+  max-width: 336px;
+  box-shadow: 0 1px .5px rgba(0,0,0,.13);
+}
+
+.message-in:before {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  width: 12px;
+  height: 19px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: -11px;
+}
+
+.bubble-text {
+  padding: 6px 7px 8px 9px;
+}
+
+.message-text {
+  font-size: 13.6px;
+  line-height: 19px;
+  font-family: 'Open Sans',sans-serif;
+  word-wrap: break-word;
+  color: #262626;
+  position: relative;
+}
+
+.text {
+  cursor: text;
+  white-space: pre-wrap;
+}
+
+.page-chat-footer {
+  padding: 0;
+  background-color: #ccc;
+  border-left: 1px solid rgba(0,0,0,.08);
+  min-height: 62px;
+  z-index: 102;
+  position: relative;
+  
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+
+
+}
+
+.block-compose {
+  
+  padding: 10px 19px;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding: 10px 19px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.input-container {
+  border-radius: 5px;
+  background-clip: padding-box;
+  width: inherit;
+  background-color: #fff;
+  -webkit-box-flex: 1;
+  
+  flex: 1 1 auto;
+  min-width: 0;
+  border-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  
+  line-height: 20px;
+  font-size: 15px;
+  min-height: 20px;
+  
+  padding: 10px 12px;
+  outline: none;
+}
+
+.input-element {
+  position: relative;
+}
+
+.input {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  padding: 0;
+  min-height: 20px;
+  max-height: 100px;
+  overflow-y: auto;
+  overflow-x: hidden; 
+}
