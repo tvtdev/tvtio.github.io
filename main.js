@@ -20,7 +20,7 @@ const createNewMessageHtml = (username, message) => {
         </div>
 
     `
-    var target = document.querySelector('#chat-room')
+    var target = document.querySelector('#root')
     target.parentNode.insertBefore(article, target);
 }
 
