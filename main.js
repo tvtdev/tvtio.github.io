@@ -21,7 +21,7 @@ const createNewMessageHtml = (username, message) => {
 
     `
     var target = document.querySelector('#chat-room')
-    target.appendChild(article);
+    target.parentNode.insertBefore(article, target);
 }
 
 const onMessage = (message) => {
@@ -41,32 +41,47 @@ const onMessage = (message) => {
 socketClient.onmessage = onMessage
 
 
-// Send Message
-const form = document.getElementById('send')
-form.onsubmit = (ev) => {
+const sendButton = document.getElementById('send_button')
+sendButton.addEventListener('click', (ev) => {
     ev.preventDefault()
-    const input = document.getElementById('text')
-    const nameInput = document.getElementById('name')
-    const text = input.value
-    const name = nameInput.value
-    if (text && text.length > 0) {
-        const message = {
-            action: "message",
-            data: { message: text, username: name }
+    if(sendButton.value == "save")
+    {
+        if (document.getElementById('text_message').value.length > 0)
+        {
+            document.getElementById('send_button').value = "Send";
+            var name_vaule = document.getElementById('text_message').value;
+            document.getElementById('name_button').value = name_vaule;
+            document.getElementById('text_message').value = "";
+            document.getElementById('name_button').style.display = 'none';
+            document.getElementById('td_name').innerHTML = "fds";//name_vaule;
         }
-        var sendstr = name + "**" + text;
-        socketClient.send(sendstr)
-        input.value = ""
-    }
-    return false
-}
+ 
+    } else if (sendButton.value == "Send") {
 
-const nameButton = document.getElementById('name-button')
-nameButton.addEventListener('click', (ev) => {
-    const nameInput = document.getElementById('name')
-    if (nameInput.value.length) {
-        document.getElementById('name').disabled = true
-        nameButton.disabled = true
-        document.getElementById('send-message').disabled = false
+        if(document.getElementById('text_message').value.length>0)
+        {
+            const input = document.getElementById('text_message')
+            const nameInput = document.getElementById('td_name');
+            const text = input.value
+            const name = nameInput.innerText
+            if (text && text.length > 0) {
+                const message = {
+                    action: "message",
+                    data: { message: text, username: name }
+                }
+                var sendstr = name + "**" + text;
+                socketClient.send(sendstr)
+                input.value = ""
+            }
+        }
+ 
     }
+  
+})
+
+
+const nameButton = document.getElementById('name_button')
+nameButton.addEventListener('click', (ev) => {
+    ev.preventDefault()
+    document.getElementById('send_button').value = "save"
 })
