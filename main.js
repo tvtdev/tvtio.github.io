@@ -20,17 +20,12 @@ const onMessage = (message) => {
     var res_username = username.substring(1, username.length);
 
     const text = data[1];
-    var res_text = text.substring(1, text.length - 1);
-
-
+    var res_text = text.substring(0, text.length - 1);
     createNewMessageHtml(res_username, res_text)
 }
 
 
-
 socketClient.onmessage = onMessage
-
-
 const sendButton = document.getElementById('send_button')
 sendButton.addEventListener('click', (ev) => {
     ev.preventDefault()
