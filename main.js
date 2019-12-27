@@ -8,20 +8,10 @@ let socketClient = new WebSocket(`${websocketUrl}`);
 
 const createNewMessageHtml = (username, message) => {
     var article = document.createElement('div');
-    article.classList.add('media-content')
-    article.innerHTML = `
-        <div class="content">
-          
-               ${username}:
-             
-                ${message}
-                <br>
-           
-        </div>
-
-    `
-    var target = document.querySelector('#root')
-    target.parentNode.insertBefore(article, target);
+    article.classList.add('message-text')
+    article.innerHTML = `<div class ="text"><ul>${username}:${message}</ul></div>`
+    var target = document.getElementById('message_list').appendChild(article);
+   // target.parentNode.insertafter(article, target);
 }
 
 const onMessage = (message) => {
@@ -53,7 +43,7 @@ sendButton.addEventListener('click', (ev) => {
             document.getElementById('name_button').value = name_vaule;
             document.getElementById('text_message').value = "";
             document.getElementById('name_button').style.display = 'none';
-            document.getElementById('td_name').innerHTML = "fds";//name_vaule;
+            document.getElementById('td_name').innerHTML = name_vaule;
         }
  
     } else if (sendButton.value == "Send") {
