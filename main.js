@@ -3,7 +3,7 @@ const url = window.location.href.split('?')[0]
 
 window.history.replaceState({}, 'Live Chat Translation', url);
 
-const websocketUrl = `wss://d4y6q7253j.execute-api.us-east-1.amazonaws.com/dev`
+const websocketUrl = `wss://vsnmou4b2h.execute-api.us-east-1.amazonaws.com/dev`
 let socketClient = new WebSocket(`${websocketUrl}`);
 
 const createNewMessageHtml = (username, message) => {
