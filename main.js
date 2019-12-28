@@ -3,7 +3,7 @@ const url = window.location.href.split('?')[0]
 
 window.history.replaceState({}, 'Live Chat Translation', url);
 
-const websocketUrl = `wss://vsnmou4b2h.execute-api.us-east-1.amazonaws.com/dev`
+const websocketUrl = `wss://e8a3wy8p1c.execute-api.us-east-1.amazonaws.com/dev`
 let socketClient = new WebSocket(`${websocketUrl}`);
 
 const createNewMessageHtml = (username, message) => {
@@ -11,17 +11,15 @@ const createNewMessageHtml = (username, message) => {
     article.classList.add('message-text')
     article.innerHTML = `<div class ="text"><ul>${username}:${message}</ul></div>`
     var target = document.getElementById('message_list').appendChild(article);
-    target.scrollTop = target.scrollHeight;
-    
    // target.parentNode.insertafter(article, target);
 }
 
 const onMessage = (message) => {
     const data = message.data.split("**")
-    const username = data[0];
+    const username = data[1];
     var res_username = username.substring(1, username.length);
 
-    const text = data[1];
+    const text = data[2];
     var res_text = text.substring(0, text.length - 1);
     createNewMessageHtml(res_username, res_text)
 }
