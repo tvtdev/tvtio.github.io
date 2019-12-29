@@ -11,7 +11,7 @@ const createNewMessageHtml = (username, message) => {
     article.classList.add('message-text')
     article.innerHTML = `<div class ="text"><ul>${username}:${message}</ul></div>`
     var target = document.getElementById('message_list').appendChild(article);
-    target.scrollTop = target.scrollHeight;
+    target.scrollTop = target.scrollHeight + 12;
 }
 
 const onMessage = (message) => {
