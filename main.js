@@ -11,7 +11,7 @@ const createNewMessageHtml = (username, message) => {
     article.classList.add('message-text')
     article.innerHTML = `<div class ="text"><ul>${username}:${message}</ul></div>`
     var target = document.getElementById('message_list').appendChild(article);
-    target.scrollTop = target.scrollHeight + 12;
+    target.scrollTop = target.scrollHeight + '12px';
 }
 
 const onMessage = (message) => {
@@ -25,6 +25,8 @@ const onMessage = (message) => {
 }
 
 
+
+
 socketClient.onmessage = onMessage
 const sendButton = document.getElementById('send_button')
 sendButton.addEventListener('click', (ev) => {
@@ -33,12 +35,13 @@ sendButton.addEventListener('click', (ev) => {
     {
         if (document.getElementById('text_message').value.length > 0)
         {
-            document.getElementById('send_button').value = "Send";
-            var name_vaule = document.getElementById('text_message').value;
-            document.getElementById('name_button').value = name_vaule;
-            document.getElementById('text_message').value = "";
-            document.getElementById('name_button').style.display = 'none';
-            document.getElementById('td_name').innerHTML = name_vaule;
+            //document.getElementById('send_button').value = "Send";
+            //var name_vaule = document.getElementById('text_message').value;
+            //document.getElementById('name_button').value = name_vaule;
+            //document.getElementById('text_message').value = "";
+            //document.getElementById('name_button').style.display = 'none';
+            //document.getElementById('td_name').innerHTML = name_vaule;
+            //document.getElementById("text_message").placeholder = "Type Message";
         }
  
     } else if (sendButton.value == "Send") {
@@ -46,9 +49,10 @@ sendButton.addEventListener('click', (ev) => {
         if(document.getElementById('text_message').value.length>0)
         {
             const input = document.getElementById('text_message')
-            const nameInput = document.getElementById('td_name');
+            const nameInput = document.getElementById('td_name_value');
             const text = input.value
-            const name = nameInput.innerText
+            const name = nameInput.innerText;
+
             if (text && text.length > 0) {
                 const message = {
                     action: "message",
@@ -58,15 +62,32 @@ sendButton.addEventListener('click', (ev) => {
                 socketClient.send(sendstr)
                 input.value = ""
             }
-        }
- 
+        } 
     }
   
 })
 
 
-const nameButton = document.getElementById('name_button')
-nameButton.addEventListener('click', (ev) => {
+const nameButtonMenu = document.getElementById('name_button_menu')
+nameButtonMenu.addEventListener('click', (ev) => {
     ev.preventDefault()
-    document.getElementById('send_button').value = "save"
+  
+
+    if ((document.getElementById('name_row').style.display == 'none')) {
+        document.getElementById('name_row').style.display = ''
+        event.preventDefault()
+    } else {
+        document.getElementById('name_row').style.display = 'none';
+        event.preventDefault()
+    }
+})
+
+
+const nameButton = document.getElementById('save_name_button')
+nameButton.addEventListener('click', (ev) => {
+    ev.preventDefault()  
+    var name_vaule = document.getElementById('text_name').value;
+    document.getElementById('td_name_value').innerHTML = name_vaule;
+    document.getElementById('text_name').value = "";
+    document.getElementById('name_row').style.display = 'none';
 })
