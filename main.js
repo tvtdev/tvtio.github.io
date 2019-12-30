@@ -25,7 +25,12 @@ const onMessage = (message) => {
 }
 
 
-socketClient.onmessage = onMessage
+socketClient.onmessage = onMessage;
+
+         const now = new Date().getTime();
+            const username = 'u'+ now;
+            document.getElementById('name_button').innerHTML = username;
+
 const sendButton = document.getElementById('send_button')
 sendButton.addEventListener('click', (ev) => {
     ev.preventDefault()
@@ -38,7 +43,9 @@ sendButton.addEventListener('click', (ev) => {
             document.getElementById('name_button').value = name_vaule;
             document.getElementById('text_message').value = "";
             document.getElementById('name_button').style.display = 'none';
-            document.getElementById('td_name').innerHTML = name_vaule;
+           // document.getElementById('td_name').innerHTML = name_vaule;
+
+username = name_vaule;
         }
  
     } else if (sendButton.value == "Send") {
@@ -48,7 +55,8 @@ sendButton.addEventListener('click', (ev) => {
             const input = document.getElementById('text_message')
             const nameInput = document.getElementById('td_name');
             const text = input.value
-            const name = nameInput.innerText
+            const name = username;
+// nameInput.innerText
             if (text && text.length > 0) {
                 const message = {
                     action: "message",
