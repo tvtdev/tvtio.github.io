@@ -3,7 +3,7 @@ const url = window.location.href.split('?')[0]
 
 window.history.replaceState({}, 'Live Chat Translation', url);
 
-const websocketUrl = `wss://e8a3wy8p1c.execute-api.us-east-1.amazonaws.com/dev`
+const websocketUrl = `wss://0wammvth41.execute-api.us-east-1.amazonaws.com/dev`
 let socketClient = new WebSocket(`${websocketUrl}`);
 
 const createNewMessageHtml = (username, message) => {
@@ -59,7 +59,16 @@ sendButton.addEventListener('click', (ev) => {
                     data: { message: text, username: name }
                 }
                 var sendstr = name + "**" + text;
-                socketClient.send(sendstr)
+                // socketClient.send(sendstr)
+                {
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("POST", "https://gizdo2uwtj.execute-api.us-east-1.amazonaws.com/dev/postmessage", true);
+                    xhr.setRequestHeader('Content-Type', 'application/json');
+                    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+                    xhr.setRequestHeader('Access-Control-Allow-Credentials', true);
+
+                    xhr.send(sendstr);
+                }
                 input.value = ""
             }
         } 
