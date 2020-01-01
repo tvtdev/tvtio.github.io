@@ -73,6 +73,12 @@ class AddNewTab extends React.Component {
         if(this.state.arra.length)
         {
         
+            {
+            
+                  var list = document.getElementById("message_text_ul");
+                  if(list.childElementCount >=200)
+                list.removeChild(list.childNodes[0]);
+            }
          
             var first = this.state.arra.shift();
             this.state.arra.push(first);
@@ -116,7 +122,7 @@ class AddNewTab extends React.Component {
 
 
 
-        this.interval = setInterval(() => this.tt(), 580);}
+        this.interval = setInterval(() => this.tt(), 158);}
 
     render() {return (null);}
 
@@ -127,10 +133,15 @@ const Tabs = (props) => {
        
     };
     var divStysle = {
-        backgroundColor: '#fff'
-    };
+        backgroundColor: '#fff',
+        display: "block",
+        borderRadius: "3px",
+        paddingTop : "3px",
+        paddingBottom : "3px",
+        paddingLeft : "5px"         
+};
     return (
- <div>
+ <div id="message_text_ul">
         {props.tabs.map((tab) => (      
            <ul key={tab.name + tab.message}><span style={divStyle}>{tab.name}</span><br/><span style={divStysle}>{tab.message}</span></ul>            
      ))}
