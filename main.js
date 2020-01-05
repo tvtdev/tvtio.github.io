@@ -31,20 +31,7 @@ socketClient.onmessage = onMessage
 const sendButton = document.getElementById('send_button')
 sendButton.addEventListener('click', (ev) => {
     ev.preventDefault()
-    if(sendButton.value == "save")
-    {
-        if (document.getElementById('text_message').value.length > 0)
-        {
-            //document.getElementById('send_button').value = "Send";
-            //var name_vaule = document.getElementById('text_message').value;
-            //document.getElementById('name_button').value = name_vaule;
-            //document.getElementById('text_message').value = "";
-            //document.getElementById('name_button').style.display = 'none';
-            //document.getElementById('td_name').innerHTML = name_vaule;
-            //document.getElementById("text_message").placeholder = "Type Message";
-        }
- 
-    } else if (sendButton.value == "Send") {
+ if (sendButton.value == "Send") {
 
         if(document.getElementById('text_message').value.length>0)
         {
@@ -68,6 +55,8 @@ sendButton.addEventListener('click', (ev) => {
                     xhr.setRequestHeader('Access-Control-Allow-Credentials', true);
 
                     xhr.send(sendstr);
+
+                    window.Home.fetchData();
                 }
                 input.value = ""
             }
