@@ -37,7 +37,15 @@ sendButton.addEventListener('click', (ev) => {
         {
             const input = document.getElementById('text_message')
             const nameInput = document.getElementById('td_name_value');
-            const text = input.value
+            var text = input.value;
+            
+            var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+            var text1 = text.replace(exp, "<a href='$1'>$1</a>");
+            var exp2 = /(^|[^\/])(www\.[\S]+(\b|$))/gim;
+
+            text =  text1.replace(exp2, '$1<a target="_blank" href="http://$2">$2</a>');
+
+
             const name = nameInput.innerText;
 
             if (text && text.length > 0) {
@@ -55,8 +63,6 @@ sendButton.addEventListener('click', (ev) => {
                     xhr.setRequestHeader('Access-Control-Allow-Credentials', true);
 
                     xhr.send(sendstr);
-
-                    window.Home.fetchData();
                 }
                 input.value = ""
             }
