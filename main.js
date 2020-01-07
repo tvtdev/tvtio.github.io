@@ -7,10 +7,10 @@ const websocketUrl = `wss://0wammvth41.execute-api.us-east-1.amazonaws.com/dev`
 let socketClient = new WebSocket(`${websocketUrl}`);
 
 const createNewMessageHtml = (username, message) => {
-    var article = document.createElement('div');
-    article.classList.add('message-text')
-    article.innerHTML = `<div class ="text"><ul>${username}:${message}</ul></div>`
-    var target = document.getElementById('message_list').appendChild(article);
+    var article = document.createElement('ul');
+    article.classList.add('message_text_u')
+    article.innerHTML = `<span>${username}</span>:<span>${message}</span>`
+    var target = document.getElementById('message_text_ul').appendChild(article);
     target.scrollTop = target.scrollHeight + '12px';
 }
 
