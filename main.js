@@ -71,9 +71,16 @@ sendButton.addEventListener('click', (ev) => {
   
 })
 
-function setCookie(name, value) {
+function setCookie(name, value)
+{
 
-    document.cookie = name + "=" + value +  "; path=/";
+    var expires = "";
+
+        var date = new Date();
+        date.setTime(date.getTime() + (10000*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
 }
 function getCookie(name) {
     var nameEQ = name + "=";
