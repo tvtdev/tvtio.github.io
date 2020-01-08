@@ -8,8 +8,7 @@ let socketClient = new WebSocket(`${websocketUrl}`);
 
 const createNewMessageHtml = (username, message) => {
     var article = document.createElement('ul');
-    article.classList.add('message_text_u')
-    article.innerHTML = `<span>${username}</span>:<span>${message}</span>`
+    article.innerHTML = `<span>${username}</span><br><span style="background-color: rgb(255, 255, 255); display: block; border-radius: 3px; padding-top: 3px; padding-bottom: 3px; padding-left: 5px; flex: 1 1 0%; flex-direction: row; overflow-wrap: break-word; max-width: 680px;">${message}</span>`
     var target = document.getElementById('message_text_ul').appendChild(article);
     target.scrollTop = target.scrollHeight + '12px';
 }
@@ -17,11 +16,8 @@ const createNewMessageHtml = (username, message) => {
 const onMessage = (message) => {
     const data = message.data.split("**")
     const username = data[1];
-    var res_username = username.substring(1, username.length);
-
     const text = data[2];
-    var res_text = text.substring(0, text.length - 1);
-    createNewMessageHtml(res_username, res_text)
+    createNewMessageHtml(username, text)
 }
 
 
@@ -48,7 +44,7 @@ sendButton.addEventListener('click', (ev) => {
 
             const name = nameInput.innerText;
 
-            if (text && text.length > 0) {
+            if (text && text.length >= 1) {
                 const message = {
                     action: "message",
                     data: { message: text, username: name }
@@ -56,6 +52,8 @@ sendButton.addEventListener('click', (ev) => {
                 var sendstr = name + "**" + text;
                 // socketClient.send(sendstr)
                 {
+
+                    socketClient = new WebSocket(`${websocketUrl}`);
                     var xhr = new XMLHttpRequest();
                     xhr.open("POST", "https://gizdo2uwtj.execute-api.us-east-1.amazonaws.com/dev/postmessage", true);
                     xhr.setRequestHeader('Content-Type', 'application/json');
@@ -63,6 +61,8 @@ sendButton.addEventListener('click', (ev) => {
                     xhr.setRequestHeader('Access-Control-Allow-Credentials', true);
 
                     xhr.send(sendstr);
+
+                   
                 }
                 input.value = ""
             }
