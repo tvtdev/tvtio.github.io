@@ -10,7 +10,7 @@ const createNewMessageHtml = (username, message) => {
     var article = document.createElement('ul');
     article.innerHTML = `<span>${username}</span><br><span style="background-color: rgb(255, 255, 255); display: block; border-radius: 3px; padding-top: 3px; padding-bottom: 3px; padding-left: 5px; flex: 1 1 0%; flex-direction: row; overflow-wrap: break-word; max-width: 680px;">${message}</span>`
     var target = document.getElementById('message_text_ul').appendChild(article);
-    target.scrollTop = target.scrollHeight + '12px';
+    target.scrollTop = target.scrollHeight + '32px';
 }
 
 const onMessage = (message) => {
