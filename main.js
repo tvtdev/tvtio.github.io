@@ -10,17 +10,29 @@ const createNewMessageHtml = (username, message) => {
     var article = document.createElement('ul');
     article.innerHTML = `<span>${username}</span><br><span style="background-color: rgb(255, 255, 255); display: block; border-radius: 3px; padding-top: 3px; padding-bottom: 3px; padding-left: 5px; flex: 1 1 0%; flex-direction: row; overflow-wrap: break-word; max-width: 680px;">${message}</span>`
     var target = document.getElementById('message_text_ul').appendChild(article);
-    target.scrollTop = target.scrollHeight + '32px';
-}
+    
+	target.scrollTop = target.scrollHeight + '52px';
+
+	//var root =  document.getElementById('root');
+	//root.scrollTop(1000);
+	//window.scrollTo(0, 1000);
+	//$('#message_text_ul').scrollTop();
+
+	$('html,body').animate({
+	    scrollTop: $('#message_text_ul').offset().top
+	}, 'slow');
+
+
+	}
 
 const onMessage = (message) => {
     const data = message.data.split("**")
     const username = data[1];
     const text = data[2];
-    createNewMessageHtml(username, text)
+    createNewMessageHtml(username, text);
+
+
 }
-
-
 
 
 socketClient.onmessage = onMessage
@@ -50,10 +62,8 @@ sendButton.addEventListener('click', (ev) => {
                     data: { message: text, username: name }
                 }
                 var sendstr = name + "**" + text;
-                // socketClient.send(sendstr)
                 {
 
-                    socketClient = new WebSocket(`${websocketUrl}`);
                     var xhr = new XMLHttpRequest();
                     xhr.open("POST", "https://gizdo2uwtj.execute-api.us-east-1.amazonaws.com/dev/postmessage", true);
                     xhr.setRequestHeader('Content-Type', 'application/json');
@@ -70,6 +80,54 @@ sendButton.addEventListener('click', (ev) => {
     }
   
 })
+
+
+$(function () {
+    $("#text_message").keypress(function (e) {
+        if (e.which == 13) {
+            
+            if (document.getElementById('text_message').value.length > 0) {
+                const input = document.getElementById('text_message')
+                const nameInput = document.getElementById('td_name_value');
+                var text = input.value;
+
+                var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                var text1 = text.replace(exp, "<a href='$1'>$1</a>");
+                var exp2 = /(^|[^\/])(www\.[\S]+(\b|$))/gim;
+
+                text = text1.replace(exp2, '$1<a target="_blank" href="http://$2">$2</a>');
+
+
+                const name = nameInput.innerText;
+
+                if (text && text.length >= 1) {
+                    const message = {
+                        action: "message",
+                        data: { message: text, username: name }
+                    }
+                    var sendstr = name + "**" + text;
+                    {
+
+                        var xhr = new XMLHttpRequest();
+                        xhr.open("POST", "https://gizdo2uwtj.execute-api.us-east-1.amazonaws.com/dev/postmessage", true);
+                        xhr.setRequestHeader('Content-Type', 'application/json');
+                        xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+                        xhr.setRequestHeader('Access-Control-Allow-Credentials', true);
+
+                        xhr.send(sendstr);
+
+
+                    }
+                    input.value = ""
+                }
+            }
+
+            e.preventDefault();
+        }
+    });
+});
+
+
 
 function setCookie(name, value)
 {
