@@ -12,7 +12,7 @@ const createNewMessageHtml = (username, message) => {
 
 
     var article = document.createElement('ul');
-    article.innerHTML = `<span>${username}</span><br><span style="background-color: rgb(255, 255, 255); display: block; border-radius: 3px; padding-top: 3px; padding-bottom: 3px; padding-left: 5px; flex: 1 1 0%; flex-direction: row; overflow-wrap: break-word; max-width: 680px;">${message}</span>`
+    article.innerHTML = `<span style="font-size:12px;color:#555555">${username}</span><br><span style="background-color: rgb(255, 255, 255); display: block; border-radius: 3px; padding-top: 3px; padding-bottom: 3px; padding-left: 5px; flex: 1 1 0%; flex-direction: row; overflow-wrap: break-word; max-width: 680px;">${message}</span>`
     var target = document.getElementById('message_text_ul').appendChild(article);
     
 	//target.scrollTop = target.scrollHeight + '22px';
@@ -25,7 +25,7 @@ const createNewMessageHtml = (username, message) => {
 
 	var fvarootrect = foot.getBoundingClientRect();
 
-	var rppt22 = fvarootrect.bottom - 14 + 'px';
+	var rppt22 = fvarootrect.bottom - 12 + 'px';
 
 
 
