@@ -8,34 +8,16 @@ let socketClient = new WebSocket(`${websocketUrl}`);
 
 const createNewMessageHtml = (username, message) => {
 
-
-
-
     var article = document.createElement('ul');
     article.innerHTML = `<span style="font-size:12px;color:#555555">${username}</span><br><span style="background-color: rgb(255, 255, 255); display: block; border-radius: 3px; padding-top: 3px; padding-bottom: 3px; padding-left: 5px; flex: 1 1 0%; flex-direction: row; overflow-wrap: break-word; max-width: 680px;">${message}</span>`
     var target = document.getElementById('message_text_ul').appendChild(article);
-    
-	//target.scrollTop = target.scrollHeight + '22px';
-
-	var root = document.getElementById('message_text_ul');
-	//root.scrollTop(1000);
-	//window.scrollTo(0, 1000);
-	//$('#message_text_ul').scrollTop();
-	var foot = document.getElementById('idpage-body');
-
-	var fvarootrect = foot.getBoundingClientRect();
-
-	var rppt22 = fvarootrect.bottom - 12 + 'px';
-
-
-
-
+    var idpage = document.getElementById('idpage-body');
+    var idpagerect = idpage.getBoundingClientRect();
+    var scrollpos = idpagerect.bottom - 22 + 'px';
 	$('html,body').animate({
-	    scrollTop: rppt22
+	    scrollTop: scrollpos
 	},10);
-
-
-	}
+}
 
 const onMessage = (message) => {
     const data = message.data.split("**")
