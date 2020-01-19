@@ -9,7 +9,7 @@ let socketClient = new WebSocket(`${websocketUrl}`);
 const createNewMessageHtml = (username, message) => {
 
     var article = document.createElement('ul');
-    article.innerHTML = `<span style="font-size:12px;color:#555555">${username}</span><br><span style="background-color: rgb(255, 255, 255); display: block; border-radius: 3px; padding-top: 3px; padding-bottom: 3px; padding-left: 5px; flex: 1 1 0%; flex-direction: row; overflow-wrap: break-word; max-width: 680px;">${message}</span>`
+    article.innerHTML = `<span style="font-size:13px;color:#134a01">${username}</span><br><span style="background-color: rgb(255, 255, 255); display: block; border-radius: 3px; padding-top: 3px; padding-bottom: 3px; padding-left: 5px; flex: 1 1 0%; flex-direction: row; overflow-wrap: break-word; max-width: 680px;">${message}</span>`
     var target = document.getElementById('message_text_ul').appendChild(article);
     var idpage = document.getElementById('idpage-body');
     var idpagerect = idpage.getBoundingClientRect();
@@ -170,9 +170,5 @@ nameButton.addEventListener('click', (ev) => {
     document.getElementById('name_row').style.display = 'none';
 })
 
-var spans = document.getElementsByTagName('span');
-for (i = 0; i < spans.length; i++)
-    spans[i].onclick = doSomething;
-
-function doSomething()
-{ alert(this); }
+function myfunction(li) {
+ alert("d"); }
