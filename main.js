@@ -170,8 +170,9 @@ nameButton.addEventListener('click', (ev) => {
     document.getElementById('name_row').style.display = 'none';
 })
 
+var spans = document.getElementsByTagName('span');
+for (i = 0; i < spans.length; i++)
+    spans[i].onclick = doSomething;
 
-$('span').bind('click', function () {
-    var t = $(this).text();
-    console.log('Hello Runoob!');
-});
+function doSomething()
+{ alert(this); }
