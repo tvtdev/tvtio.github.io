@@ -171,7 +171,7 @@ nameButton.addEventListener('click', (ev) => {
 })
 
 
-$('span').click(function () {
+$('span').bind('click', function () {
     var t = $(this).text();
-    alert(t);
+    console.log('Hello Runoob!');
 });
