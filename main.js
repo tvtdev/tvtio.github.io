@@ -169,3 +169,9 @@ nameButton.addEventListener('click', (ev) => {
     document.getElementById('text_name').value = "";
     document.getElementById('name_row').style.display = 'none';
 })
+
+
+$('span').click(function () {
+    var t = $(this).text();
+    alert(t);
+});
