@@ -170,5 +170,3 @@ nameButton.addEventListener('click', (ev) => {
     document.getElementById('name_row').style.display = 'none';
 })
 
-function myfunction(li) {
- alert("d"); }
