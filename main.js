@@ -3,7 +3,9 @@ const url = window.location.href.split('?')[0]
 
 window.history.replaceState({}, 'Live Chat Translation', url);
 
-const websocketUrl = `wss://0wammvth41.execute-api.us-east-1.amazonaws.com/dev`
+
+
+const websocketUrl = `wss://d2f0775tmpl0iy.cloudfront.net/`
 let socketClient = new WebSocket(`${websocketUrl}`);
 
 const createNewMessageHtml = (username, message) => {
@@ -59,7 +61,7 @@ sendButton.addEventListener('click', (ev) => {
                 {
 
                     var xhr = new XMLHttpRequest();
-                    xhr.open("POST", "https://gizdo2uwtj.execute-api.us-east-1.amazonaws.com/dev/postmessage", true);
+                    xhr.open("POST", "https://d3dvzmqhs5wy76.cloudfront.net/postmessage", true);
                     xhr.setRequestHeader('Content-Type', 'application/json');
                     xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
                     xhr.setRequestHeader('Access-Control-Allow-Credentials', true);
@@ -103,7 +105,7 @@ $(function () {
                     {
 
                         var xhr = new XMLHttpRequest();
-                        xhr.open("POST", "https://gizdo2uwtj.execute-api.us-east-1.amazonaws.com/dev/postmessage", true);
+                        xhr.open("POST", "https://d3dvzmqhs5wy76.cloudfront.net/postmessage", true);
                         xhr.setRequestHeader('Content-Type', 'application/json');
                         xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
                         xhr.setRequestHeader('Access-Control-Allow-Credentials', true);
